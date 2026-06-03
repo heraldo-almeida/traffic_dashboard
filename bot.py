@@ -151,7 +151,7 @@ def check_traffic():
     print(f"Current RMR Health Index: {health_index}%")
     
     # THRESHOLD CHECK: 60% or below
-    if health_index <= 90:
+    if health_index <= 70:
         send_whatsapp_alert(health_index, df)
 
 
